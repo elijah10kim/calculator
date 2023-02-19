@@ -1,0 +1,43 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.calculator {
+    border: 1px solid black;
+    width: 450px;
+    border-radius: 5px;
+}
+
+.screen-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+    background-color: black;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-clip:border-box;
+}
+
+.screen {
+    width:75%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 3px;
+    padding: 30px;
+    text-align: end;
+}
+
+.buttons {
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding:20px;
+    background-color: lightcoral;
+}
+
+button {
+    padding: 20px;
+}
