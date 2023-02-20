@@ -6,9 +6,15 @@ body {
 }
 
 .calculator {
-    border: 1px solid black;
+    border: 4px solid black;
     width: 450px;
-    border-radius: 5px;
+    border-radius: 25px;
+    background-color: rgb(51, 51, 51);
+    -moz-background-clip: padding; 
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    overflow:hidden;
+    font-family: 'Orbitron', sans-serif;
 }
 
 .screen-container {
@@ -16,10 +22,8 @@ body {
     align-items: center;
     justify-content: center;
     width:100%;
-    background-color: black;
     padding-top: 20px;
     padding-bottom: 20px;
-    background-clip:border-box;
 }
 
 .screen {
@@ -29,7 +33,6 @@ body {
     padding: 20px 35px;
     text-align: end;
     font-size: 2em;
-    font-family: 'Orbitron', sans-serif;
 }
 
 .buttons {
@@ -43,9 +46,8 @@ body {
 button {
     padding: 20px;
     border-radius: 10px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Orbitron', sans-serif;
     font-size:larger;
-    /*box-shadow: 2px;*/
 }
 
 #equal-sign {
