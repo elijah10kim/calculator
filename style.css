@@ -25,9 +25,10 @@ body {
 .screen {
     width:75%;
     background-color: rgb(255, 255, 255);
-    border-radius: 3px;
-    padding: 30px;
+    border-radius: 5px;
+    padding: 20px 35px;
     text-align: end;
+    font-size: 2em;
 }
 
 .buttons {
@@ -40,4 +41,8 @@ body {
 
 button {
     padding: 20px;
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:larger;
+    /*box-shadow: 2px;*/
 }
