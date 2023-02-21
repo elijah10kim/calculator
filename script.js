@@ -1,3 +1,17 @@
+const screen = document.getElementById('screen')
+
+const digitButtons = document.querySelectorAll('.digit-btn');
+digitButtons.forEach((button) => {button.addEventListener('click', () => appendDigit(button.textContent))})
+
+function appendDigit(digit) {
+    if (screen.textContent === '0') {
+        screen.textContent = digit
+    }
+    else {
+        screen.textContent += digit
+    }
+}
+
 function add(x,y) {
     return x + y;
 }
@@ -28,3 +42,4 @@ function divide(x,y) {
 function operate(op, x, y) {
     return op(x,y);
 }
+

@@ -26,13 +26,14 @@ body {
     padding-bottom: 20px;
 }
 
-.screen {
+#screen {
     width:75%;
     background-color: rgb(255, 255, 255);
     border-radius: 5px;
     padding: 20px 35px;
     text-align: end;
     font-size: 2em;
+    word-wrap: break-word;
 }
 
 .buttons {
