@@ -1,14 +1,27 @@
-const screen = document.getElementById('screen')
+const screen = document.getElementById('screen');
 
 const digitButtons = document.querySelectorAll('.digit-btn');
-digitButtons.forEach((button) => {button.addEventListener('click', () => appendDigit(button.textContent))})
+digitButtons.forEach((button) => {button.addEventListener('click', () => appendDigit(button.textContent))});
+
+const clearButton = document.getElementById('clear-btn');
+const equalButton = document.getElementById('equal-btn');
+const plusButton = document.getElementById('add-btn');
+const minusButton = document.getElementById('subtract-btn');
+const timesButton = document.getElementById('multiply-btn');
+const divideButton = document.getElementById('division-btn');
+
+clearButton.addEventListener('click', clearScreen)
+
+function clearScreen() {
+    screen.textContent = 0;
+}
 
 function appendDigit(digit) {
     if (screen.textContent === '0') {
-        screen.textContent = digit
+        screen.textContent = digit;
     }
     else {
-        screen.textContent += digit
+        screen.textContent += digit;
     }
 }
 
