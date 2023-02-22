@@ -28,7 +28,6 @@ function clearScreen() {
 function appendDigit(digit) {
     if (screen.textContent === '0' || newScreen) {
         screen.textContent = digit;
-        console.log(screen.textContent);
         newScreen = false;
     }
     else {
@@ -46,9 +45,13 @@ function setOperation(op) {
 }
 
 function evaluateExpression() {
+    if (operator == '' || newScreen) {
+        return;
+    }
     num2 = Number(screen.textContent);
     result = Math.round((operate(operator, num1, num2)) * 100) / 100
     screen.textContent = result;
+    operator = '';
 }
 
 function add(x,y) {
@@ -60,22 +63,11 @@ function subtract(x,y) {
 }
 
 function multiply(x,y) {
-    let product = x * y;
-    if (product == -0) {
-        product = 0;
-    }
-    return product;
+    return x * y;
 }
 
 function divide(x,y) {
-    if (x == -0) {
-        x = 0;
-    }
-    let quotient = x / y;
-    if (quotient == -0) {
-        return 0;
-    }
-    return quotient;
+    return x / y;
 }
 
 function operate(op, x, y) {
