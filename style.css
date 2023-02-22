@@ -49,6 +49,15 @@ button {
     border-radius: 10px;
     font-family: 'Orbitron', sans-serif;
     font-size:larger;
+    transition-duration: 0.09s;
+}
+
+button:hover {
+    transform: scale(1.15);
+}
+
+button:active {
+    transform: scale(1);
 }
 
 #equal-btn {
@@ -56,7 +65,32 @@ button {
     grid-column: 3 / 5;
 }
 
+#equal-btn:hover {
+    transform: scale(1.1);
+    background-color: lightgreen;
+}
+
+#equal-btn:active {
+    transform: scale(1);
+}
+
 #add-btn {
     grid-column: 4;
     grid-row: 2 / 5;
+}
+
+.operator-btn:hover {
+    background-color: rgb(168, 168, 244);
+}
+
+#add-btn:hover {
+    transform: scale(1.1);
+}
+
+#add-btn:active {
+    transform: scale(1);
+}
+
+#clear-btn:hover {
+    background-color: rgb(242, 242, 128);
 }
