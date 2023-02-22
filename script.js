@@ -16,6 +16,7 @@ const decimalButton = document.getElementById('decimal-btn');
 
 clearButton.addEventListener('click', clearScreen);
 equalButton.addEventListener('click', evaluateExpression);
+decimalButton.addEventListener('click', appendDecimal);
 
 
 function clearScreen() {
@@ -32,6 +33,12 @@ function appendDigit(digit) {
     }
     else {
         screen.textContent += digit;
+    }
+}
+
+function appendDecimal() {
+    if (!screen.textContent.includes('.')) {
+        screen.textContent += '.';
     }
 }
 
