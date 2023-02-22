@@ -37,8 +37,11 @@ function appendDigit(digit) {
 }
 
 function setOperation(op) {
+    if (operator != '') {
+        evaluateExpression();
+    }
     num1 = Number(screen.textContent);
-    operator = op
+    operator = op;
     newScreen = true;
 }
 
